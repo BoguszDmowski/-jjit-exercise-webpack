@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import styles from "./App.module.css"
 
 class App extends Component {
     render () {
-        return <div>Hello there General Kenobi!</div>
+        return <div className={styles.text}>Hello there General Kenobi!</div>
     }
 }
 
