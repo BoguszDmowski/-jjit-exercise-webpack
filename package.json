@@ -3,9 +3,19 @@
     "version": "1.0.0",
     "description": "Webpack",
     "author": "Marcin Kwiatkowski",
+    "scripts": {
+        "build": "webpack --config webpack.config.js"
+    },
     "dependencies": {
         "react": "16.13.1",
         "react-dom": "16.13.1"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "@babel/core": "7.11.1",
+        "@babel/preset-env": "7.11.0",
+        "@babel/preset-react": "7.10.4",
+        "babel-loader": "8.10.0",
+        "webpack": "4.44.1",
+        "webpack-cli": "3.3.12"
+    }
   }
