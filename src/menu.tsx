@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useCallback } from "react";
 
 const Menu: React.FC = () => {
-    return <div> This is a menu that is written in TS</div>
-}
-
-export default Menu;
+    const handleClick = useCallback((e: React.MouseEvent) => {
+        console.log(e);
+      }, []);
+      return (
+        <div>
+          <button onClick={handleClick}>TS click</button>
+        </div>
+      );
+    };
+    
+    export default Menu;
